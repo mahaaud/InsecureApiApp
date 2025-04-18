@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InsecureApiApp.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class BackendAppController : ControllerBase
     {
         private readonly string _conn = "Server=localhost;Database=Test;User Id=admin;Password=Password123!";
@@ -37,7 +37,7 @@ namespace InsecureApiApp.Controllers
         }
 
         [HttpPost(Name = "UserUpload")]
-        public IActionResult Upload()
+        public IActionResult UserFileUploader()
         {
             var file = Request.Form.Files[0];
             var path = Path.Combine("wwwroot/uploads", file.FileName);
