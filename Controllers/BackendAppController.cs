@@ -1,6 +1,5 @@
 using System.Data.SqlClient;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InsecureApiApp.Controllers
