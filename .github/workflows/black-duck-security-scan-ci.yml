@@ -35,6 +35,10 @@ jobs:
           polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_assessment_types: "SCA,SAST"
+          
+          ### SCANNING: Optional fields
+          polaris_application_name: ${{ vars.POLARIS_APP_NAME }}
+          polaris_project_name: ${{ vars.POLARIS_PROJECT_NAME }}
 
           ### PULL REQUEST COMMENTS: Uncomment below to enable
           polaris_prComment_enabled: true 
