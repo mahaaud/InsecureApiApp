@@ -37,7 +37,7 @@ jobs:
           polaris_assessment_types: "SCA,SAST"
           
           ### SCANNING: Optional fields
-          polaris_application_name: ${{ github.event.repository.name }} #${{ vars.POLARIS_APP_NAME }}
+          polaris_application_name: ${{ vars.POLARIS_APP_NAME }} #${{ vars.POLARIS_APP_NAME }}
           polaris_project_name: ${{ github.event.repository.name }} #${{ vars.POLARIS_PROJECT_NAME }}
 
           ### PULL REQUEST COMMENTS: Uncomment below to enable
